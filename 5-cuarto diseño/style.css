@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1em;
+
+}
+
+header {
+  background: #4d5c6d;
+  padding: 1.5em 0;
+  color: white;
+}
+
+header .logo {
+  float: left;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav {
+  float: right;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2em;
+  font-weight: 500;
+}
+
+.nav a.active {
+  text-decoration: underline;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hero {
+  background: #4d5c6d;
+  color: white;
+  padding: 0;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+}
+
+
+.hero-img {
+  max-width: 300px;
+  height: auto;
+}
+
+
+.superior-derecha{
+    width: 40vh;
+    height: 50vh;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+.superior-derecha h1{
+    color: #ffff;
+    font-size: 2.9749rem;
+    font-weight: 700;
+}
+.superior-derecha h3{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.superior-derecha h4{
+    color: #8a8a8a;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.superior-derecha-botones{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 0.1rem;
+}
+.boton-azul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    color: #fff;
+    font-size: 0.7rem;
+    background-color: rgb(0, 116, 225);
+    border-radius: 20px;
+    box-shadow: 0 0.5vh 1.5vh rgb(50, 50, 50); 
+}
+
+
+.btn {
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: #3995db;
+  color: white;
+}
+
+.btn.secondary {
+  color: white;
+  text-decoration: underline;
+  margin-left: 1em;
+}
+
+.btn.small {
+  background: #3995db;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 1em;
+}
+
+.brands {
+  background: #eee;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand-logos img {
+  margin: 0 1em;
+  height: 40px;
+  opacity: 0.5;
+}
+
+.features {
+  background: white;
+  padding: 4em 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.features .feature {
+  flex: 1;
+  text-align: center;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.projects {
+  padding: 4em 0;
+}
+
+.selected-projects{
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.selected-projects img{
+  width: 1.7em;
+  height: 1.7em;
+}
+.project-grid {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.project-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  width: 16em;
+  flex-grow: 1 1 0;
+}
+
+.blog-twitter {
+  background: #f5f5f5;
+  padding: 4em 0;
+  display: flex;
+  gap: 2em;
+}
+.blog-twitter .container{
+  background: #f5f5f5;
+  padding: 4em 0;
+  display: flex;
+  gap: 2em;
+}
+
+.blog, .twitter {
+  flex: 1;
+}
+
+.blog .post {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.blog .post img {
+  width: 80px;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+
+.older-entries {
+  display: block;
+  margin-top: 1em;
+}
+
+.main-footer {
+  background: #333;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 0.5em;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+@media (max-width: 651px){
+  .blog-twitter .container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 826px) {
+  .features, .blog-twitter, .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .superior-derecha-botones{
+    margin-bottom: 4vh;
+  }
+
+  .hero-img {
+    position: static;
+    margin-top: 2em;
+    max-width: 100%;
+  }
+
+  .nav {
+    float: none;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .nav a {
+    display: inline-block;
+    margin: 0.5em;
+  }
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.hero-img {
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img {
+    margin-bottom: 2em;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 515px) {
+  .brand-logos {
+  display: block;
+  }
+
+  .clearfix{
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .logo {
+    align-self: center;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 285px){
+  .clearfix nav{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1110px){
+  .project-grid {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .project-grid img{
+    width: 70vw;
+  }
+
+  .selected-projects{
+    align-items: center;
+    justify-content: center;
+  }
+}

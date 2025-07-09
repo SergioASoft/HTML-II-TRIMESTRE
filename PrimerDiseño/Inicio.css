@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+/* Header */
+header {
+  background: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-bottom: 4px solid #00aaff;
+}
+
+header h1 {
+  float: left;
+}
+
+header h1 span.azul {
+  color: #00aaff;
+}
+
+nav {
+  float: right;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: rgb(18, 147, 212);
+}
+
+/* Banner */
+.banner {
+  background: url('./images/cabecera.jpg') no-repeat center center/cover;
+  color: white;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  size: 100%;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  max-width: 600px;
+}
+
+/* Boletín */
+.boletin {
+  background: #1a1a1a;
+  color: white;
+  padding: 30px 0;
+}
+
+.boletin .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boletin h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.boletin form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.boletin form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+}
+
+.boletin form button {
+  padding: 10px 20px;
+  border: none;
+  background: #e8491d;
+  color: white;
+  cursor: pointer;
+}
+
+/* Cajas */
+.cajas {
+  padding: 30px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.cajas .contenedor {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.caja {
+  width: 30%;
+  padding: 20px;
+}
+
+.caja img {
+  width: 100px;
+  height: auto;
+}
+
+.caja h4 {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background: rgb(18,147,212);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  header h1, nav {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul {
+    padding-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .boletin .contenedor {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .boletin h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .boletin form {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .boletin form input[type="email"],
+  .boletin form button {
+    width: 100%;
+  }
+
+  .cajas .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .banner h2 {
+    font-size: 24px;
+  }
+
+  .banner p {
+    padding: 0 20px;
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+}

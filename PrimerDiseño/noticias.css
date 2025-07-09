@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(images/500_333\ \(2\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+header {
+    background: #eca023;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+span {
+    font-style: italic;
+    color: rgb(18, 147, 212);
+}
+
+/* NAVBAR */
+.navbar {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgb(33, 40, 43);
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgb(36, 40, 43);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: rgb(18, 147, 212);
+}
+
+
+/* Línea separadora */
+.line {
+    height: 4px;
+    background-color: rgb(18, 147, 212);
+    width: 100%;
+}
+
+/* Buscador */
+.buscador-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 10px 5%;
+}
+
+.buscador-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 50%;
+    max-width: 100%;
+}
+.busquedas{
+    width: 100%;
+}
+.buscador-container button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buscador-container button:hover {
+    background-color: #c0392b;
+}
+
+/* SUSCRIPCIÓN */
+.suscr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: rgb(36, 40, 43);
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* PÁGINA - Blog */
+.blog {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Segoe UI';
+    padding-top: 20px;
+    padding-bottom: 5vh;
+}
+
+.blog h1 {
+    color: rgb(34, 28, 28);
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+}
+
+/* Noticias */
+.noticia {
+    background-color: rgb(230, 230, 230);
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 800px;
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    position: static;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    height: 7vh;
+    background-color: rgb(18, 147, 212);
+    text-align: center;
+    padding: 3%;
+    width: 100%;
+    clear: both;
+}
+
+/* Media Queries para pantallas grandes */
+@media (min-width: 726px) {
+    .suscr {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #foot {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1024px) {
+    .suscr {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #foot {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

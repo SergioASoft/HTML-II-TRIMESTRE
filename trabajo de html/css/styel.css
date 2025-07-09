@@ -1,0 +1,780 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  padding: 6px;
+  background-color: #1f172f;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  color: gray;
+}
+
+header ul li:hover {
+  cursor: pointer;
+  color: white;
+}
+
+header .navegation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+header .navegation .down {
+  width: 90px;
+  height: 100%;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #833fd0, #455fd6, #107ad0);
+  color: white;
+}
+
+header .hamburguer {
+  background-color: transparent;
+  display: none;
+  border: none;
+  color: white;
+  font-size: 45px;
+}
+
+main {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+
+.product-page {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+  color: white;
+  background-color: #2e2550;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
+.content-product-page {
+  width: 400px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btns-product-page {
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: fit-content;
+}
+
+.btn-download {
+  padding: 8px;
+  border: none;
+  font-size: 18px;
+  border-radius: 3px;
+  background-color: #fffffb;
+  color: #e163a2;
+}
+
+.feature {
+  padding: 6px;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 18px;
+  background-color: transparent;
+  color: white;
+}
+
+.content-product-page h1 {
+  font-size: 60px;
+  width: 50%;
+}
+
+.content-product-page p {
+  font-size: 20px;
+  width: 80%;
+}
+
+.phone {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding-left: 8%;
+  padding-bottom: 2%;
+  background-image: url("../images (1)/hojasFondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.phone img {
+  width: 200px;
+}
+
+.fonctionnalities {
+  width: 100%;
+  height: 70%;
+  background-color: #f1f2f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fonctionnalities img {
+  width: 370px;
+}
+
+.fonctionnalities h1,
+h3 {
+  color: #e42283;
+}
+
+.fonctionnalities h1 {
+  font-size: 40px;
+}
+
+.continer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.content-alpha {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-alpha .content-marketing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.list {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  align-items: center;
+}
+
+.circle-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e42283;
+  border-radius: 20px;
+  font-size: 10px;
+  width: 17px;
+  font-weight: 1000;
+  color: #e42283;
+}
+
+.servicios {
+  background-color: #1f172f;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  display: flex;
+}
+
+.servicios {
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.servicios .info h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.servicios .info p {
+  font-size: 18px;
+  color: white;
+  width: 70%;
+  text-align: center;
+}
+
+.servicios .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.servicios .cards {
+  width: 60%;
+  gap: 30px;
+  height: auto;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios .cards .card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0px;
+  width: 75%;
+  height: auto;
+  min-height: 530px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.servicios .cards .card:hover {
+  scale: 1.02;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.4);
+}
+
+.card .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .title .pink {
+  font-size: 30px;
+  color: #e42283;
+  font-weight: 1000;
+}
+
+.card .title h1 {
+  font-size: 30px;
+  color: #2e264f;
+  font-weight: 1000;
+}
+
+.card .price {
+  background-color: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card .price h1 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.card .price div {
+  width: 60px;
+  position: relative;
+}
+
+.card .price div label {
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+
+.card .price div .standard {
+  width: 60px;
+  left: 65px;
+  font-size: 14px;
+}
+
+.card .price div .ultimate {
+  width: 50px;
+  left: 85px;
+  font-size: 15px;
+}
+
+.card .list-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  padding: 10px;
+}
+
+.card .list-info .content-list-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .list-info .content-list-info h1 {
+  font-size: 14px;
+  color: #e42283;
+  font-weight: 1000;
+}
+
+.card .list-info .content-list-info .x {
+  color: black;
+}
+
+.card .list-info .content-list-info p {
+  font-size: 14px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+
+.card .info-service {
+  width: 80%;
+  display: flex;
+  text-align: center;
+}
+
+.card .btn-service {
+  width: 60%;
+}
+
+.card .btn-service .btn-pink {
+  height: 45px;
+  width: 100%;
+  background: linear-gradient(90deg, #e966aa, #d5247c);
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+}
+
+.card .btn-service .btn-black {
+  height: 45px;
+  width: 100%;
+  background: #2e264f;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footer-content {
+  width: 59%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer span {
+  color: #e42283;
+}
+
+footer .redes-sociales img {
+  width: 20px;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    position: relative;
+  }
+
+  header .hamburguer {
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+
+  header ul {
+    border-top: #f1f2f7 1px solid;
+    transform: translateY(-200%);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 100%;
+    background-color: #1f172f;
+    width: 100%;
+    flex-direction: column;
+    left: 0;
+    gap: 0;
+    display: flex;
+  }
+
+  header ul.active {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  header ul li {
+    font-size: 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  header ul li:hover {
+    background-color: #2e2550;
+    text-decoration: underline;
+    color: white;
+  }
+
+  header .navegation {
+    padding: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  header .navegation .down {
+    width: 100px;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  main {
+    height: auto;
+    min-height: 20%;
+  }
+
+  .phone {
+    align-items: center;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .phone img {
+    width: 50%;
+    padding-bottom: 10%;
+  }
+
+  .product-page {
+    /* padding-top: 5%; */
+    justify-content: center;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .content-product-page {
+    width: 80%;
+    /* padding: 5px; */
+  }
+
+  .content-product-page h1 {
+    font-size: 20px;
+  }
+
+  .content-product-page p {
+    font-size: 10px;
+  }
+
+  .btn-download {
+    font-size: 7px;
+  }
+
+  .feature {
+    font-size: 7px;
+  }
+
+  .fonctionnalities {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    background-color: #f1f2f7;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .fonctionnalities h1,
+  h3 {
+    color: #e42283;
+  }
+
+  .fonctionnalities h1 {
+    font-size: 40px;
+  }
+
+  .fonctionnalities .continer img {
+    width: 80%;
+  }
+
+  .continer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .content-alpha {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .content-alpha .content-marketing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .list {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .circle-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e42283;
+    border-radius: 20px;
+    font-size: 10px;
+    width: 17px;
+    font-weight: 1000;
+    color: #e42283;
+  }
+
+  .servicios {
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .servicios .info h1 {
+    font-size: 30px;
+    color: white;
+  }
+
+  .servicios .info p {
+    font-size: 12px;
+    color: white;
+    width: 80%;
+    text-align: center;
+  }
+
+  .servicios .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .servicios .cards {
+    width: 100%;
+    gap: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .servicios .cards .card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px;
+    width: 70%;
+    height: auto;
+    min-height: 530px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .servicios .cards .card:hover {
+    scale: 1.02;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  .card .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card .title .pink {
+    font-size: 30px;
+    color: #e42283;
+    font-weight: 1000;
+  }
+
+  .card .title h1 {
+    font-size: 30px;
+    color: #2e264f;
+    font-weight: 1000;
+  }
+
+  .card .price {
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card .price h1 {
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  .card .price div {
+    width: 60px;
+    position: relative;
+  }
+
+  .card .price div label {
+    position: absolute;
+    top: 0;
+    left: 45px;
+  }
+
+  .card .price div .standard {
+    width: 60px;
+    left: 65px;
+    font-size: 14px;
+  }
+
+  .card .price div .ultimate {
+    width: 50px;
+    left: 85px;
+    font-size: 15px;
+  }
+
+  .card .list-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .card .list-info .content-list-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card .list-info .content-list-info h1 {
+    font-size: 14px;
+    color: #e42283;
+    font-weight: 1000;
+  }
+
+  .card .list-info .content-list-info .x {
+    color: black;
+  }
+
+  .card .list-info .content-list-info p {
+    font-size: 14px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+  }
+
+  .card .info-service {
+    width: 80%;
+    display: flex;
+    text-align: center;
+  }
+
+  .card .btn-service {
+    width: 60%;
+  }
+
+  .card .btn-service .btn-pink {
+    height: 45px;
+    width: 100%;
+    background: linear-gradient(90deg, #e966aa, #d5247c);
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+  }
+
+  .card .btn-service .btn-black {
+    height: 45px;
+    width: 100%;
+    background: #2e264f;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+  }
+
+  footer .footer-content {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer span {
+    color: #e42283;
+  }
+
+  footer .redes-sociales img {
+    width: 20px;
+  }
+}
