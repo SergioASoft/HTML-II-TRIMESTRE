@@ -191,13 +191,13 @@ header .logo {
   padding: 4em 0;
 }
 
-.selected-projects{
+.icono-nombre{
   display: flex;
   gap: 0.4rem;
   align-items: center;
 }
 
-.selected-projects img{
+.icono-nombre img{
   width: 1.7em;
   height: 1.7em;
 }
@@ -228,10 +228,22 @@ header .logo {
   padding: 4em 0;
   display: flex;
   gap: 2em;
+  text-align: left;
+  max-width: 90vw;
 }
 
 .blog, .twitter {
   flex: 1;
+}
+
+.texto-twitter{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.fecha{
+  opacity: 0.5;
 }
 
 .blog .post {
@@ -255,6 +267,7 @@ header .logo {
   color: white;
   padding: 2em 1em;
   text-align: center;
+  display: flex;
 }
 
 .social-links a {
@@ -267,6 +280,7 @@ header .logo {
   .blog-twitter .container{
     display: flex;
     flex-direction: column;
+    max-width: 70vw;
   }
 }
 @media (max-width: 826px) {
@@ -354,7 +368,7 @@ header .logo {
     width: 70vw;
   }
 
-  .selected-projects{
+  .icono-nombre{
     align-items: center;
     justify-content: center;
   }
